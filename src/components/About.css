@@ -1,0 +1,136 @@
+.about {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-text p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.skills-title {
+  color: #333;
+  margin: 2rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.tech-icon {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: translateY(-5px);
+}
+
+.resume-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .skills-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+  
+  .about-text p {
+    font-size: 0.95rem;
+  }
+  
+  .tech-icon {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+}
