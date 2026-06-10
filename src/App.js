@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Certifications from './pages/Certification';
+import Qualifications from './pages/Qualification';
 
 // Import components
 import Navbar from './components/Navbar';
@@ -23,6 +25,8 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certifications" element={<Certifications />} />
+            <Route path="/qualifications" element={<Qualifications />} />
           </Routes>
         </main>
         <Footer />

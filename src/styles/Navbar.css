@@ -76,3 +76,36 @@
     font-size: 0.9rem;
   }
 }
+
+/* Update the nav-menu for more items */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* For smaller desktops */
+@media (max-width: 968px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import './ContactForm.css';
+import '../styles/Contact.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -13,10 +13,16 @@ function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
 
-  // Replace these with your EmailJS credentials
-  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';     // Get from EmailJS
-  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';   // Get from EmailJS
-  const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';     // Get from EmailJS
+
+  // Initialize EmailJS with just the key
+  emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+  const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+  console.log('Service ID:', EMAILJS_SERVICE_ID);
+console.log('Template ID:', EMAILJS_TEMPLATE_ID);
+console.log('Public Key:', EMAILJS_PUBLIC_KEY);
 
   // Handle input changes
   const handleChange = (e) => {

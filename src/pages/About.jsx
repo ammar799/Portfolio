@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/About.css';
+import '../styles/About.css';
 
 function About() {
   const handleDownloadResume = () => {
@@ -15,7 +15,7 @@ function About() {
         
         <div className="about-content">
           <div className="about-image">
-            <img src="/assets/images/profile.jpg" alt="Profile" />
+            <img src="/assets/images/my.png" alt="Profile" />
           </div>
           
           <div className="about-text">
