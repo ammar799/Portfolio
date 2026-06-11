@@ -36,9 +36,18 @@ function About() {
             </p>
 
             
-            <h3 className="skills-title">Tech Stack</h3>
+            <h3 className="skills-title">Technologies</h3>
             <div className="tech-icons">
-              <div className="tech-icon">HTML5</div>
+              <div className="img"><img src="/assets/images/HTML LOGO.jpeg" alt="No img" /></div>
+              <div className="img"><img src="/assets/images/CSS.jpeg" alt="" /></div>
+              <div className="img"><img src="/assets/images/JS.jpeg" alt="" /></div>
+              <div className="img"><img src="/assets/images/REACT.jpeg" alt="" /></div>
+              <div className="img"><img src="/assets/images/MONGO.jpeg" alt="" /></div>
+              <div className="img"><img src="/assets/images/NODE.png" alt="node.js" /></div>
+              <div className="img"><img src="/assets/images/EXPRESS.jpeg" alt="" /></div>
+              <div className="img"><img src="/assets/images/GIT.jpeg" alt="" /></div>
+              
+              {/* <div className="tech-icon">HTML5</div>
               <div className="tech-icon">CSS3</div>
               <div className="tech-icon">JavaScript</div>
               <div className="tech-icon">React</div>
@@ -46,7 +55,7 @@ function About() {
               <div className="tech-icon">MongoDB</div>
               <div className="tech-icon">MySQL</div>
               <div className="tech-icon">Express.js</div>
-              <div className="tech-icon">Git</div>
+              <div className="tech-icon">Git</div> */}
             </div>
             
             <button className="resume-btn" onClick={handleDownloadResume}>
